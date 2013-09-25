@@ -4,46 +4,43 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Your New Jekyll Site</title>
-        <meta name="description" content="">
+        <meta name="description" content=ADC Style Guide with Jekyll>
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/styleguide.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.css">
     </head>
     <body>
 
-        <div class="site">
+        <div class="container">
           <div class="header">
-            <h1 class="title"><a href="/">ADC Style Guide with Jekyll</a></h1>
-            <a class="extra" href="/">home</a>
+            <img width="300" src="img/ADC.png" alt="ADC Logo">
           </div>
 
-
-
-
       <div class="row">
-        <div class="span3">       
-          <ul id="menuElem" class="example-navigation sticky">
-            <li><a href="index.html">Info</a></li>
+        <div class="col-md-3"> 
+          <div class="bs-sidebar hidden-print affix-top" role="complementary">
+            <ul class="nav bs-sidenav">
             <li><a href="colours.html">Colours</a></li>
             <li><a href="logos.html">Logos</a></li>
             <li><a href="typography.html">Typography</a></li>
             <li><a href="buttons.html">Buttons</a></li>
             <li><a href="images.html">Images</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="navigation.html">Navigation</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="email.html">Email</a></li>
             <li><a href="other.html">Other Elements</a></li>
+            <li class="divider"></li>
+            <li><a href="/">About</a></li>
           </ul>
-        </div>  
+        </div>
+      </div>
 
 
-         <div class="span9">   
+         <div class="col-md-9">   
           <h1>Email</h1>
 
 
@@ -135,21 +132,10 @@
 
 
           <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/australiandiabetescouncil">github.com/australiandiabetescouncil</a><br />
-                <a href="https://twitter.com/asharedvoice">twitter.com/asharedvoice</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+            
+        </div> <!--container end-->
+
+
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
           <!-- Scripts from Website -->
           <script src="js/bootstrap.js"></script>

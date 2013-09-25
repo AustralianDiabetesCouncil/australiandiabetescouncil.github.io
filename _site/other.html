@@ -4,93 +4,44 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Your New Jekyll Site</title>
-        <meta name="description" content="">
+        <meta name="description" content=ADC Style Guide with Jekyll>
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/styleguide.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.css">
     </head>
     <body>
 
-        <div class="site">
+        <div class="container">
           <div class="header">
-            <h1 class="title"><a href="/">ADC Style Guide with Jekyll</a></h1>
-            <a class="extra" href="/">home</a>
+            <img width="300" src="img/ADC.png" alt="ADC Logo">
           </div>
 
-
-
-
       <div class="row">
-        <div class="span3">       
-          <ul id="menuElem" class="example-navigation sticky">
-            <li><a href="index.html">Info</a></li>
+        <div class="col-md-3"> 
+          <div class="bs-sidebar hidden-print affix-top" role="complementary">
+            <ul class="nav bs-sidenav">
             <li><a href="colours.html">Colours</a></li>
             <li><a href="logos.html">Logos</a></li>
             <li><a href="typography.html">Typography</a></li>
             <li><a href="buttons.html">Buttons</a></li>
             <li><a href="images.html">Images</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="navigation.html">Navigation</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="email.html">Email</a></li>
             <li><a href="other.html">Other Elements</a></li>
+            <li class="divider"></li>
+            <li><a href="/">About</a></li>
           </ul>
-        </div>  
+        </div>
+      </div>
 
 
-         <div class="span9">   
+         <div class="col-md-9">   
           <h1>Other Elements</h1>
-
-<!--
-	FAQ
--->
-
-<article class="example-section" id="faq">
-	<h3 class="example-section-heading">FAQ</h3>
-	<p class="example-intro">As used on the <a href="http://australiandiabetescouncil.com/Faq">FAQ page</a>.</p>
-	<div class="example">
-		<p class="normaltext">
-		<strong>The FAQ question?</strong><br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.
-		</p>
-	</div>
-	<pre><code class="language-markup">&lt;p class=&quot;normaltext&quot;&gt;
-	&lt;strong&gt;The FAQ question?&lt;/strong&gt;&lt;br&gt;
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-&lt;/p&gt;
-</code></pre>
-</article>
-
-<!--
-	Search Box
--->
-
-<article class="example-section" id="searchbox">
-	<h3 class="example-section-heading">Search Box</h3>
-	<p class="example-intro"></p>
-	<div class="example">
-		<div class="navbar-search input-append">
-			<div id="p_lt_ctl01_SearchBox_pnlSearch" class="searchBox">
-				<label for="p_lt_ctl01_SearchBox_txtWord" id="p_lt_ctl01_SearchBox_lblSearch" style="display:none;">Search for:</label>
-				<input name="p$lt$ctl01$SearchBox$txtWord" type="text" maxlength="1000" id="p_lt_ctl01_SearchBox_txtWord" class="search-query">
-				<input type="submit" name="p$lt$ctl01$SearchBox$btnSearch" value="Search" id="p_lt_ctl01_SearchBox_btnSearch" class="btn">
-			</div>
-		</div>
-	</div>
-	<pre><code class="language-markup">&lt;div class=&quot;navbar-search input-append&quot;&gt;
-	&lt;div id=&quot;p_lt_ctl01_SearchBox_pnlSearch&quot; class=&quot;searchBox&quot;&gt;
-		&lt;label for=&quot;p_lt_ctl01_SearchBox_txtWord&quot; id=&quot;p_lt_ctl01_SearchBox_lblSearch&quot; style=&quot;display:none;&quot;&gt;Search for:&lt;/label&gt;
-		&lt;input name=&quot;p$lt$ctl01$SearchBox$txtWord&quot; type=&quot;text&quot; maxlength=&quot;1000&quot; id=&quot;p_lt_ctl01_SearchBox_txtWord&quot; class=&quot;search-query&quot;&gt;
-		&lt;input type=&quot;submit&quot; name=&quot;p$lt$ctl01$SearchBox$btnSearch&quot; value=&quot;Search&quot; id=&quot;p_lt_ctl01_SearchBox_btnSearch&quot; class=&quot;btn&quot;&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</article>
-
 
 <!--
 	Well
@@ -153,145 +104,24 @@
 }</code></pre>
 </article>
 
-
 <!--
-	Footer Link
+	HR
 -->
 
-<article class="example-section" id="footerlink">
-	<h3 class="example-section-heading">Footer Link</h3>
-	<p class="example-intro"></p>
-	<div class="example example-alt">
-		<div class="footer">
-			<ul class="footerCMSListMenuUL">
-				<li class="footerCMSListMenuLI"><a href="#" class="footerCMSListMenuLink">Footer Link</a></li>
-				<li class="footerCMSListMenuHighlightedLI"><a href="#" class="footerCMSListMenuLinkHighlighted">Active Footer link</a></li>
-				<li class="footerCMSListMenuLI"><a href="#" class="footerCMSListMenuLink">Last Footer Link</a></li>
-			</ul>
-		</div>
-	</div>
-	<pre><code class="language-markup">&lt;div class=&quot;footer&quot;&gt;
-	&lt;ul class=&quot;footerCMSListMenuUL&quot;&gt;
-		&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Footer Link&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;footerCMSListMenuHighlightedLI&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;footerCMSListMenuLinkHighlighted&quot;&gt;Active Footer link&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Last Footer Link&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+<article class="example-section" id="clearfix">
+	<h3 class="example-section-heading">Line Break</h3>
+
+	<hr>
+
+	<p class="example-intro">The <code>hr</code> class can be used to seperate content.</p>
+	<pre><code class="language-css">/* The CSS generated by the HR tag */
+
+&lt;hr&gt;
+
+}</code></pre>
 </article>
 
 
-<!--
-	Footer
--->
-
-<article class="example-section" id="footer">
-	<h3 class="example-section-heading">Website Footer</h3>
-	<p class="example-intro"></p>
-	<div class="example example-scroll">
-		<div class="container container-footer">  
-			<div class="footer">   
-				<footer>
-					<div class="row">
-						<div class="span6">
-							<ul class="footerCMSListMenuUL">
-								<li class="footerCMSListMenuLI"><a href="/About-Us/Overview.aspx" class="footerCMSListMenuLink" style="">About&nbsp;Us</a></li>
-								<li class="footerCMSListMenuLI"><a href="/Support-Us" class="footerCMSListMenuLink">Support&nbsp;Us</a></li>
-								<li class="footerCMSListMenuLI"><a href="/Media" class="footerCMSListMenuLink">Media</a></li>
-								<li class="footerCMSListMenuLI"><a href="/Publications-(1)" class="footerCMSListMenuLink">Publications</a></li>
-								<li class="footerCMSListMenuLI"><a href="/Careers" class="footerCMSListMenuLink">Careers</a></li>
-								<li class="footerCMSListMenuHighlightedLI"><a href="/Contact" class="footerCMSListMenuLinkHighlighted">Contact</a></li>
-							</ul>
-						</div>
-						<div class="span6">
-							<span class="get-social-icons">
-								<a href="http://www.facebook.com/australiandiabetescouncil" target="_blank"><i class="icon-facebook"></i></a>
-								<a href="https://twitter.com/asharedvoice" target="_blank"><i class="icon-twitter"></i></a>
-								<a href="http://www.youtube.com/user/ausdiabetescouncil" target="_blank"><i class="icon-youtube"></i></a>
-								<a href="https://soundcloud.com/australiandiabetescouncil" target="_blank"><i class="icon-soundcloud"></i></a>
-								<a href="http://www.linkedin.com/company/australian-diabetes-council" target="_blank"><i class="icon-linkedin"></i></a>|&nbsp;&nbsp;
-								<a href="http://eepurl.com/uBShH" target="_blank"><i class="icon-email"></i>Subscribe to Newsletter</a>
-							</span>
-						</div>
-					</div>
-					<div class="footer-legal">
-						<p>
-							<small>&copy; 2013, Australian Diabetes Council. All rights reserved. ABN 84 001 363 766 - CFN 12458 <br>
-								<a href="/Terms-and-Conditions.aspx"> Terms and Conditions </a> |
-								<a href="/Privacy.aspx"> Privacy</a> |
-								<a href="/Site-Map.aspx"> Site Map </a> 
-							</small>
-						</p>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</div>
-	<!--<pre><code class="language-markup">&lt;div class=&quot;container container-footer&quot;&gt;  
-	&lt;div class=&quot;footer&quot;&gt;   
-		&lt;footer&gt;
-			&lt;div class=&quot;row&quot;&gt;
-				&lt;div class=&quot;span6&quot;&gt;
-					&lt;ul class=&quot;footerCMSListMenuUL&quot;&gt;
-						&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;/About-Us/Overview.aspx&quot; class=&quot;footerCMSListMenuLink&quot; style=&quot;&quot;&gt;About&amp;nbsp;Us&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;/Support-Us&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Support&amp;nbsp;Us&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;/Media&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Media&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;/Publications-(1)&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Publications&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;footerCMSListMenuLI&quot;&gt;&lt;a href=&quot;/Careers&quot; class=&quot;footerCMSListMenuLink&quot;&gt;Careers&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;footerCMSListMenuHighlightedLI&quot;&gt;&lt;a href=&quot;/Contact&quot; class=&quot;footerCMSListMenuLinkHighlighted&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/div&gt;
-				&lt;div class=&quot;span6&quot;&gt;
-					&lt;span class=&quot;get-social-icons&quot;&gt;
-						&lt;a href=&quot;http://www.facebook.com/australiandiabetescouncil&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-						&lt;a href=&quot;https://twitter.com/asharedvoice&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-						&lt;a href=&quot;http://www.youtube.com/user/ausdiabetescouncil&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-						&lt;a href=&quot;https://soundcloud.com/australiandiabetescouncil&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-soundcloud&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-						&lt;a href=&quot;http://www.linkedin.com/company/australian-diabetes-council&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;|&amp;nbsp;&amp;nbsp;
-						&lt;a href=&quot;http://eepurl.com/uBShH&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon-email&quot;&gt;&lt;/i&gt;Subscribe to Newsletter&lt;/a&gt;
-					&lt;/span&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;footer-legal&quot;&gt;
-				&lt;p&gt;
-					&lt;small&gt;&amp;copy; 2013, Australian Diabetes Council. All rights reserved. ABN 84 001 363 766 - CFN 12458 &lt;br&gt;
-						&lt;a href=&quot;/Terms-and-Conditions.aspx&quot;&gt; Terms and Conditions &lt;/a&gt; |
-						&lt;a href=&quot;/Privacy.aspx&quot;&gt; Privacy&lt;/a&gt; |
-						&lt;a href=&quot;/Site-Map.aspx&quot;&gt; Site Map &lt;/a&gt; 
-					&lt;/small&gt;
-				&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/footer&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>-->
-</article>
-
-<!--
-	Homepage Thumbnail Box
--->
-
-<article class="example-section" id="thumbnailbox">
-	<h3 class="example-section-heading">Homepage Thumnail Box</h3>
-	<p class="example-intro">The appropriate image size for a homepage thumbnail box is 268px x 199px</p>
-	<div class="example">
-		<div style="width: 270px;">
-			<div class="thumbnails">
-				<img alt="" class="homepagethumbnails" src="img/homepage-thumbnail-example.jpg">
-				<div class="thumbnailscont">
-					<h5>The heading associated with the thumbnail</h5>
-					<a class="pull-right" href="">Read More &raquo;</a></div>
-				</div>
-			</div>
-		</div>
-	<pre><code class="language-markup">&lt;div class=&quot;span3&quot;&gt;
-	&lt;div class=&quot;thumbnails&quot;&gt;
-		&lt;img alt=&quot;&quot; class=&quot;homepagethumbnails&quot; src=&quot;&quot;&gt;
-		&lt;div class=&quot;thumbnailscont&quot;&gt;
-			&lt;h5&gt;The heading associated with the thumbnail&lt;/h5&gt;
-			&lt;a class=&quot;pull-right&quot; href=&quot;&quot;&gt;Read More&raquo;&lt;/a&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</article>
 
 
 <!--
@@ -339,21 +169,10 @@
 
 
           <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/australiandiabetescouncil">github.com/australiandiabetescouncil</a><br />
-                <a href="https://twitter.com/asharedvoice">twitter.com/asharedvoice</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+            
+        </div> <!--container end-->
+
+
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
           <!-- Scripts from Website -->
           <script src="js/bootstrap.js"></script>
