@@ -1,0 +1,289 @@
+/* Style Guide Website Specific Styles */
+
+/* ===================================================
+	Code hghlighting 
+===================================================	*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	
+	border: border: 1px solid #e1e1e8;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: -1px 0 0;
+	overflow: auto;	
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #f7f7f9;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background-color: #f7f7f9;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.token.important {
+	font-weight: bold;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+
+/* ===================================================
+	Layout 
+===================================================	*/
+
+.container-body {
+	padding: 10px 30px 40px;
+}
+
+@media all and (min-width: 770px) {
+	.example-navigation {
+		max-width: 270px;
+	}
+}
+
+.example-navigation li ul {
+	display: none;
+}
+
+.example-navigation li.HighLighted ul {
+	display: block;
+}
+
+@media all and (min-width: 770px) {
+	#menuElem.sticky {
+		width: 220px;
+	}
+}
+
+@media all and (max-width: 769px) {
+	#menuElem {
+		position: relative!important;
+	}
+}
+
+.example-section {
+	margin-bottom: 30px;
+}
+
+.example-section-heading {
+
+}
+
+.example-intro {
+
+}
+
+.example {
+	position: relative;
+	margin: 15px 0 0;
+	padding: 47px 19px 19px;
+	*padding-top: 19px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+.example-alt {
+	background-color: #0088B2;
+}
+
+.example-scroll {
+	overflow-x: scroll;
+}
+
+.example:after {
+	content: "Example";
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #9da0a4;
+}
+
+.style-guide .carousel {
+	min-height: 100px;
+}
+
+/* ===================================================
+	Colour Page Sections 
+===================================================	*/
+
+.colour-section-primary {
+	background: #0088b2;
+	color: white;
+}
+
+.colour-section-text {
+	background: #333333;
+	color: white;
+}
+
+.colour-section-link {
+	background: #0088cc;
+	color: white;
+}
+
+.colour-section-linkhover {
+	background: #155375;
+	color: white;
+}
+
+.colour-section-primarynav {
+	background: -moz-linear-gradient(top, rgba(0,188,233,1) 0%, rgba(0,136,178,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,188,233,1)), color-stop(100%,rgba(0,136,178,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bce9', endColorstr='#0088b2',GradientType=0 ); /* IE6-8 */
+	color: white;
+}
+
+.colour-section-list {
+	background: #005E9F;
+	color: white;
+}
+
+.colour-section-body {
+	background: #ffffff;
+}
+
+.colour-section-site {
+	background: #B7D8EB;
+}
+
+/* ===================================================
+	Logos Page
+===================================================	*/
+
+.table-logos td {
+	border-top: 0;
+	text-align: center;
+	padding: 10px 60px 30px 0;
+	vertical-align: middle;
+}
+
+.table-logos p, .table-logos h4 {
+	text-align: left;
+}
+
+/* ===================================================
+	Email Page
+===================================================	*/
+
+.table-newsletters td {
+	border-top: 0;
+	text-align: center;
+}
+
+/* ===================================================
+	Responsive Utilities Table
+===================================================	*/
+
+.responsive-utilities th small {
+  display: block;
+  font-weight: normal;
+  color: #999;
+}
+.responsive-utilities tbody th {
+  font-weight: normal;
+}
+.responsive-utilities td {
+  text-align: center;
+}
+.responsive-utilities td.is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
+}
+.responsive-utilities td.is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
+}

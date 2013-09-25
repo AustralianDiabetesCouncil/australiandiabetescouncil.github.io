@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Style Guide - Australian Diabetes Council</title>
+        <meta name="viewport" content="width=device-width">
+        
+		<!-- From ADC website -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/website.css">
+		
+		<!-- For the Style Guide -->
+        <link rel="stylesheet" href="css/styleguide.css">
+        
+        <!-- Added stylesheet which fixes website bugs -->
+        <link rel="stylesheet" href="updates.css">
+        
+    </head>
+    <body class="style-guide">
+
+	<div class="container container-body">
+		<div class="row">
+			<div class="header"> 
+				<div id="logo" class="span3 pull-left">
+				  <img align="left" width="300" src="img/ADC.png" alt="ADC Logo">
+				</div>
+			</div>
+		</div>
+		<div class="zoneMainContent">
+			<div class="row">
+				<div class="span3"> 		  
+					<ul id="menuElem" class="example-navigation sticky">
+						<li <?php echo ($page == 'home') ? 'class="HighLighted"' : '';?>><a href="index.php">Overview</a></li>
+						<li <?php echo ($page == 'scaffolding') ? 'class="HighLighted"' : '';?>><a href="scaffolding.php">Scaffolding</a>
+							<ul>
+								<li><a href="scaffolding.php#homelayout">Page Layouts</a></li>
+								<li><a href="scaffolding.php#responsive">Responsive Design</a></li>
+								<li><a href="scaffolding.php#responsiveutility">Responsive Utility Classes</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'colours') ? 'class="HighLighted"' : '';?>><a href="colours.php">Colours</a>
+							<ul>
+
+							</ul>
+						</li>
+						<li <?php echo ($page == 'logos') ? 'class="HighLighted"' : '';?>><a href="logos.php">Logos</a>
+							<ul>
+								<li><a href="logos.php#usage">Usage</a></li>
+								<li><a href="logos.php#logos">ADC Brand Logo List</a></li>
+								<li><a href="logos.php#speciallogos">Special Logos</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'typography') ? 'class="HighLighted"' : '';?>><a href="typography.php">Typography</a>
+							<ul>
+								<li><a href="typography.php#fontfamily">Font Families</a></li>
+								<li><a href="typography.php#headings">Headings</a></li>
+								<li><a href="typography.php#body">Body Copy</a></li>
+								<li><a href="typography.php#lead">Lead Copy</a></li>
+								<li><a href="typography.php#boldcopy">Bold Copy</a></li>
+								<li><a href="typography.php#bodylinks">Links</a></li>
+								<li><a href="typography.php#emphasis">Emphasis</a></li>
+								<li><a href="typography.php#address">Address</a></li>
+								<li><a href="typography.php#unorderedlists">Unordered Lists</a></li>
+								<li><a href="typography.php#orederedlists">Ordered Lists</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'buttons') ? 'class="HighLighted"' : '';?>><a href="buttons.php">Buttons</a>
+							<ul>
+								<li><a href="buttons.php#standard">Standard Buttons</a></li>
+								<li><a href="buttons.php#fullwidth">Full Width</a></li>
+								<li><a href="buttons.php#sized">Sized</a></li>
+								<li><a href="buttons.php#tooltip">Button with Tooltip</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'images') ? 'class="HighLighted"' : '';?>><a href="images.php">Images</a>
+							<ul>
+								<li><a href="images.php#imageusage">Image Usage</a></li>
+								<li><a href="images.php#polaroid">Polaroid</a></li>
+								<li><a href="images.php#imageleft">Floated Left</a></li>
+								<li><a href="images.php#imageright">Floated Right</a></li>
+								<li><a href="images.php#caption">Image with Caption</a></li>
+								<li><a href="images.php#homepagenewsicon">Homepage News Icons</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'media') ? 'class="HighLighted"' : '';?>><a href="media.php">Media</a>
+							<ul>
+								<li><a href="media.php#mediaentry">Media Entry</a></li>
+								<li><a href="media.php#newsentry">News Entry</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'navigation') ? 'class="HighLighted"' : '';?>><a href="navigation.php">Navigation</a>
+							<ul>
+								<li><a href="navigation.php#primarynav">Primary Navigation</a></li>
+								<li><a href="navigation.php#headernav">Header Navigation</a></li>
+								<li><a href="navigation.php#sidebarnav">Sidebar Navigation</a></li>
+								<li><a href="navigation.php#breadcrumb">Breadcrumb</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'tables') ? 'class="HighLighted"' : '';?>><a href="tables.php">Tables</a>
+							<ul>
+								<li><a href="tables.php#tablestandard">Standard Table</a></li>
+								<li><a href="tables.php#tablestripped">Stripped Table</a></li>
+								<li><a href="tables.php#tablebordered">Bordered Table</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'email') ? 'class="HighLighted"' : '';?>><a href="email.php">Email</a>
+							<ul>
+								<li><a href="email.php#emailsig">Email Signature</a></li>
+								<li><a href="email.php#newslettertemplates">Newsletter Templates</a></li>
+							</ul>
+						</li>
+						<li <?php echo ($page == 'other') ? 'class="HighLighted"' : '';?>><a href="other.php">Other Elements</a>
+							<ul>
+								<li><a href="other.php#faq">FAQ</a></li>
+								<li><a href="other.php#well">Well</a></li>
+								<li><a href="other.php#searchbox">Search Box</a></li>
+								<li><a href="other.php#icons">Icons</a></li>
+								<li><a href="other.php#clearfix">Clearfix</a></li>
+								<li><a href="other.php#footerlink">Footer Link</a></li>
+								<li><a href="other.php#footer">Website Footer</a></li>
+								<li><a href="other.php#thumbnailbox">Homepage Elements</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>              
+				<div class="span8">
+					<div id="example-content">
+
+<h1>Style Guide Reference</h1>
+<h3>Information</h3>
+<p><strong>Version:</strong> 1.0<br>
+<strong>Creation Date:</strong> May 2013<br>
+<strong>Developed By:</strong> Yalcin Kaya of Australia Diabetes Council
+</p>
+<h3>Purpose of This Document</h3>
+<p>This document is intended as an informational reference guide when creating content to be used on the Australian Diabetes Council website. Please take the time to read and understand how the various elements work, and how they can be used together to ensure a vital brand identity.</p>
+<h3>How to Use This Document</h3>
+<p>Use the navigation on the left to find the element you would like to use based on its primary category. Within each element you will find a short explanation of the elements purpose, an example of its usage and in most cases the code required to output that element on the website.</p> 
+<h3>Support Using This Document</h3>
+<p>Should you require support using this document or to further understand any element contained within it, please contact Yalcin Kaya, Digital Project Manager, at <a href="mailto:yalcink@australiandiabetescouncil.com">yalcink@australiandiabetescouncil.com</a>.
+
+</div><!-- #example-content -->
+				</div>
+			</div> 
+		</div>
+	</div><!-- .container -->
+	<div class="container container-footer">  
+		<div class="footer">   
+			<footer>
+				<div class="row">
+					<div class="span6">
+						<ul class="footerCMSListMenuUL">
+							<li class="footerCMSListMenuLI"><a href="/About-Us/Overview.aspx" class="footerCMSListMenuLink" style="">About&nbsp;Us</a></li>
+							<li class="footerCMSListMenuLI"><a href="/Support-Us" class="footerCMSListMenuLink">Support&nbsp;Us</a></li>
+							<li class="footerCMSListMenuLI"><a href="/Media" class="footerCMSListMenuLink">Media</a></li>
+							<li class="footerCMSListMenuLI"><a href="/Publications-(1)" class="footerCMSListMenuLink">Publications</a></li>
+							<li class="footerCMSListMenuLI"><a href="/Careers" class="footerCMSListMenuLink">Careers</a></li>
+							<li class="footerCMSListMenuHighlightedLI"><a href="/Contact" class="footerCMSListMenuLinkHighlighted">Contact</a></li>
+						</ul>
+					</div>
+					<div class="span6">
+						<span class="get-social-icons">
+							<a href="http://www.facebook.com/australiandiabetescouncil" target="_blank"><i class="icon-facebook"></i></a>
+							<a href="https://twitter.com/asharedvoice" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="http://www.youtube.com/user/ausdiabetescouncil" target="_blank"><i class="icon-youtube"></i></a>
+							<a href="https://soundcloud.com/australiandiabetescouncil" target="_blank"><i class="icon-soundcloud"></i></a>
+							<a href="http://www.linkedin.com/company/australian-diabetes-council" target="_blank"><i class="icon-linkedin"></i></a>|&nbsp;&nbsp;
+							<a href="http://eepurl.com/uBShH" target="_blank"><i class="icon-email"></i>Subscribe to Newsletter</a>
+						</span>
+					</div>
+				</div>
+				<div class="footer-legal">
+					<p>
+						<small>&copy; 2013, Australian Diabetes Council. All rights reserved. ABN 84 001 363 766 - CFN 12458 <br>
+							<a href="/Terms-and-Conditions.aspx"> Terms and Conditions </a> |
+							<a href="/Privacy.aspx"> Privacy</a> |
+							<a href="/Site-Map.aspx"> Site Map </a> 
+						</small>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<!-- Scripts from Website -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/website.js"></script>
+	
+	<!-- Scripts for Style Guide Website -->
+	<script src="js/prism.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/styleguide.js"></script>
+    </body>
+</html>
