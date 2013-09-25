@@ -1,6 +1,3 @@
 name: ADC Style Guide with Jekyll
 markdown: redcarpet
 pygments: true
-
-# Permalinks
-permalink:        pretty

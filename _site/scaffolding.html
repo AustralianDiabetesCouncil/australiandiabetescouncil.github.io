@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Your New Jekyll Site</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">ADC Style Guide with Jekyll</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+
+
+
+      <div class="row">
+        <div class="span3">       
+          <ul id="menuElem" class="example-navigation sticky">
+            <li><a href="index.html">Info</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="logos.html">Logos</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="email.html">Email</a></li>
+            <li><a href="other.html">Other Elements</a></li>
+          </ul>
+        </div>  
+
+
+         <div class="span9">   
+          <h1>Scaffolding</h1>
+
+<!--
+	Homepage Layout
+-->
+
+<article class="example-section" id="homelayout">
+	<h3 class="example-section-heading">Homepage Layout</h3>
+	<p class="example-intro">This demo illustrates how the various homepage elements interact responsively. Click the below button and resize the browser window horizontally.<br><br><a target="_blank" href="layouts/home.php" class="btn btn-medium">View the layout</a></p>
+</article>
+
+<!--
+	Content Page Layout
+-->
+
+<article class="example-section" id="contentlayout">
+	<h3 class="example-section-heading">Content Page Layout</h3>
+	<p class="example-intro">This demo illustrates how the various content page elements interact responsively. Click the below button and resize the browser window horizontally.<br><br><a target="_blank" href="layouts/page.php" class="btn btn-medium">View the layout</a></p>
+</article>
+
+
+<!--
+	Responsive
+-->
+
+<article class="example-section" id="responsive">
+	<h3 class="example-section-heading">Responsive Design</h3>
+	<p class="example-intro">The Australian Diabetes Council website utilises the Boostrap Responsive CSS Framework.</p>
+	<table class="table table-bordered table-striped">
+		<thead>
+		<tr>
+		  <th>Label</th>
+		  <th>Layout width</th>
+		  <th>Column width</th>
+		  <th>Gutter width</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Large display</td>
+				<td>1200px and up</td>
+				<td>70px</td>
+				<td>30px</td>
+			</tr>
+			<tr>
+				<td>Default</td>
+				<td>980px and up</td>
+				<td>60px</td>
+				<td>20px</td>
+			</tr>
+			<tr>
+				<td>Portrait tablets</td>
+				<td>768px and above</td>
+				<td>42px</td>
+				<td>20px</td>
+			</tr>
+			<tr>
+				<td>Phones to tablets</td>
+				<td>767px and below</td>
+				<td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+			</tr>
+			<tr>
+				<td>Phones</td>
+				<td>480px and below</td>
+				<td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+			</tr>
+		</tbody>
+	</table>
+	<pre><code class="language-css">@media (min-width: 1200px) {
+	/* Large desktop */
+}
+ 
+@media (min-width: 768px) and (max-width: 979px) {
+	/* Portrait tablet to landscape and desktop */
+}
+ 
+@media (max-width: 767px) {
+	/* Landscape phone to portrait tablet */
+}
+ 
+@media (max-width: 480px) {
+	/* Landscape phones and down */
+}</code></pre>
+</article>
+
+<!--
+	Responsive Utility Classes
+-->
+
+<article class="example-section" id="responsiveutility">
+	<h3 class="example-section-heading">Responsive Utility Classes</h3>
+	<p class="example-intro">For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device).</p>
+	<table class="table table-bordered table-striped responsive-utilities">
+		<thead>
+			<tr>
+				<th>Class <small>Added to the HTML</small></th>
+				<th>Phones <small>767px and below</small></th>
+				<th>Tablets <small>979px to 768px</small></th>
+				<th>Desktops <small>Default</small></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th><code>.visible-phone</code></th>
+				<td class="is-visible">Visible</td>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-hidden">Hidden</td>
+			</tr>
+			<tr>
+				<th><code>.visible-tablet</code></th>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-visible">Visible</td>
+				<td class="is-hidden">Hidden</td>
+			</tr>
+			<tr>
+				<th><code>.visible-desktop</code></th>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-visible">Visible</td>
+			</tr>
+			<tr>
+				<th><code>.hidden-phone</code></th>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-visible">Visible</td>
+				<td class="is-visible">Visible</td>
+			</tr>
+			<tr>
+				<th><code>.hidden-tablet</code></th>
+				<td class="is-visible">Visible</td>
+				<td class="is-hidden">Hidden</td>
+				<td class="is-visible">Visible</td>
+			</tr>
+			<tr>
+				<th><code>.hidden-desktop</code></th>
+				<td class="is-visible">Visible</td>
+				<td class="is-visible">Visible</td>
+				<td class="is-hidden">Hidden</td>
+			</tr>
+		</tbody>
+	</table>
+</article>
+        </div>
+      </div>
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/australiandiabetescouncil">github.com/australiandiabetescouncil</a><br />
+                <a href="https://twitter.com/asharedvoice">twitter.com/asharedvoice</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <!-- Scripts from Website -->
+          <script src="js/bootstrap.js"></script>
+          <script src="js/website.js"></script>
+          <!-- Scripts for Style Guide Website -->
+          <script src="js/prism.js"></script>
+          <script src="js/jquery.sticky.js"></script>
+          <script src="js/styleguide.js"></script>
+
+    </body>
+</html>
