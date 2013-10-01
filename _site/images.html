@@ -49,12 +49,21 @@
 	Image Usage
 -->
 
-<h3 class="example-section-heading" id="imageusage">Image Usage Guidelines</h3>
-<ul>
-	<li>Images should be no more than 72ppi in resolution</li>
-	<li>Images should be pre-cropped for the space they will be inserted into (as indicated below)</li>
-	<li>Wrap images within articles in the appropriate HTML code as indicated in the <a href="#imageleft">floated sections</a>.
-</ul>
+<div class="panel panel-warning">
+	<div class="panel-heading">
+        <h3 class="panel-title">Image Usage Guidelines</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul>
+			<li>Images should be no more than 72ppi in resolution</li>
+			<li>Images should be pre-cropped for the space they will be inserted into (as indicated below)</li>
+			<li>Wrap images within articles in the appropriate HTML code as indicated in the <a href="#imageleft">floated sections</a>.</li>
+		</ul>
+    </div>
+</div>
+
+
 <h3>Image Sizes</h3>
 <p>The below table indicates the required images sizes throghout the website</p>
 <table class="table table-bordered table-striped">
@@ -99,20 +108,29 @@
 	</tbody>
 </table>
 
-
+<hr>
 <!--
-	Polaroid
+	Image Borders
 -->
 
 <article class="example-section" id="polaroid">
-	<h3 class="example-section-heading">Polariod Image</h3>
-	<p class="example-intro">The polaroid image is used exclusively in recipes.</p>
+	<h3 class="example-section-heading">Image Borders</h3>
+	<p class="example-intro">There are 3 styling that can be applied to any image.</p>
 	<div class="example">
-		<img class="img-polaroid" width="380" src="img/recipe.jpg">
+		<img class=" "  alt="default" width="200" src="img/recipe.jpg">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-rounded"  alt="rounded" width="200" src="img/recipe.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-circle"  alt="circle" width="200" src="img/recipe.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-thumbnail" alt="thumbnail" width="200" src="img/recipe.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
-	<pre><code class="language-markup">&lt;img class=&quot;img-polaroid&quot; src=&quot;&quot;&gt;</code></pre>
+	<pre><code class="language-markup">&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot; &quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-thumbnail&quot;&gt;	</code></pre>
 </article>
 
+
+<hr>
 <!--
 	Floated Left
 -->
@@ -121,7 +139,7 @@
 	<h3 class="example-section-heading">Image Floated Left</h3>
 	<p class="example-intro">To float an image to the left, enclose the image within a <code>&lt;figure&gt;</code> element with a class of <code>&lt;pull-left&gt;</code>.</p>
 	<div class="example">
-		<figure class="pull-left"><img src="img/image-page-example.jpg" width="120"></figure><p class="normaltext">This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
+		<figure class="pull-left"><img src="img/image-page-example.jpg" width="200"></figure><p class="normaltext">This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
 	</div>
 	<pre><code class="language-markup">&lt;figure class=&quot;pull-left&quot;&gt;
 	&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
@@ -131,6 +149,7 @@
 &lt;/p&gt;</code></pre>
 </article>
 
+<hr>
 <!--
 	Floated Right
 -->
@@ -139,7 +158,7 @@
 	<h3 class="example-section-heading">Image Floated Right</h3>
 	<p class="example-intro">To float an image to the right, enclose the image within a <code>&lt;figure&gt;</code> element with a class of <code>&lt;pull-right&gt;</code>.</p>
 	<div class="example">
-		<figure class="pull-right"><img src="img/image-page-example.jpg" width="120"></figure><p>This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
+		<figure class="pull-right"><img src="img/image-page-example.jpg" width="200"></figure><p>This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
 	</div>
 	<pre><code class="language-markup">&lt;figure class=&quot;pull-right&quot;&gt;
 	&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
@@ -150,7 +169,7 @@
 </code></pre>
 </article>
 
-
+<hr>
 <!--
 	Image With Caption
 -->
@@ -169,20 +188,6 @@
 	This text floats aorund the image and caption.
 &lt;/p&gt;
 </code></pre>
-</article>
-
-
-<!--
-	Homepage News Icon
--->
-
-<article class="example-section" id="homepagenewsicon">
-	<h3 class="example-section-heading">Homepage News Icon</h3>
-	<p class="example-intro"></p>
-	<div class="example">
-		<img src="img/homepage-news-icon.jpg">
-	</div>
-	<pre><code class="language-markup">&lt;img class=&quot;newsthumbnail&quot; src=&quot;&quot;&gt;</code></pre>
 </article>
 
 				</div>
