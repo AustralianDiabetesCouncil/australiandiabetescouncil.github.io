@@ -1,1 +1,0 @@
-$(document).ready(function(){$(window).width()>=770&&$(".sticky").sticky({topSpacing:0})});$(window).resize(function(){$(window).width()>=770&&$(".sticky").sticky({topSpacing:0})});
