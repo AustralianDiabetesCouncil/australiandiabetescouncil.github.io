@@ -1,7 +1,3 @@
-/* Style Guide Website Specific Styles */
-/* ===================================================
-	Code hghlighting 
-===================================================	*/
 /* line 8, ../sass/styleguide.scss */
 code[class*="language-"],
 pre[class*="language-"] {
@@ -17,64 +13,62 @@ pre[class*="language-"] {
   tab-size: 4;
   -webkit-hyphens: none;
   -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
-  border: 1px solid #e1e1e8;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
   border-radius: 0px; }
 
 @media print {
-  /* line 34, ../sass/styleguide.scss */
+  /* line 25, ../sass/styleguide.scss */
   code[class*="language-"],
   pre[class*="language-"] {
     text-shadow: none; } }
-/* Code blocks */
-/* line 40, ../sass/styleguide.scss */
+/* line 34, ../sass/styleguide.scss */
 pre[class*="language-"] {
   padding: 1em;
   margin: -1px 0 0;
   overflow: auto; }
 
-/* line 47, ../sass/styleguide.scss */
+/* line 41, ../sass/styleguide.scss */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
   background-color: #f7f7f9; }
 
-/* Inline code */
-/* line 52, ../sass/styleguide.scss */
+/* line 49, ../sass/styleguide.scss */
 :not(pre) > code[class*="language-"] {
   padding: .1em; }
 
-/* line 59, ../sass/styleguide.scss */
+/* line 56, ../sass/styleguide.scss */
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
   color: slategray; }
 
-/* line 63, ../sass/styleguide.scss */
+/* line 60, ../sass/styleguide.scss */
 .token.punctuation {
   color: #999; }
 
-/* line 67, ../sass/styleguide.scss */
+/* line 64, ../sass/styleguide.scss */
 .namespace {
   opacity: .7; }
 
-/* line 74, ../sass/styleguide.scss */
+/* line 71, ../sass/styleguide.scss */
 .token.property,
 .token.tag,
 .token.boolean,
 .token.number {
   color: #905; }
 
-/* line 80, ../sass/styleguide.scss */
+/* line 77, ../sass/styleguide.scss */
 .token.selector,
 .token.attr-name,
 .token.string {
   color: #690; }
 
-/* line 88, ../sass/styleguide.scss */
+/* line 85, ../sass/styleguide.scss */
 .token.operator,
 .token.entity,
 .token.url,
@@ -83,57 +77,54 @@ pre[class*="language-"] {
   color: #a67f59;
   background-color: #f7f7f9; }
 
-/* line 95, ../sass/styleguide.scss */
+/* line 92, ../sass/styleguide.scss */
 .token.atrule,
 .token.attr-value,
 .token.keyword {
   color: #07a; }
 
-/* line 101, ../sass/styleguide.scss */
+/* line 98, ../sass/styleguide.scss */
 .token.regex,
 .token.important {
   color: #e90; }
 
-/* line 105, ../sass/styleguide.scss */
+/* line 102, ../sass/styleguide.scss */
 .token.important {
   font-weight: bold; }
 
-/* line 109, ../sass/styleguide.scss */
+/* line 106, ../sass/styleguide.scss */
 .token.entity {
   cursor: help; }
 
-/* ===================================================
-	Layout 
-===================================================	*/
-/* line 118, ../sass/styleguide.scss */
+/* line 115, ../sass/styleguide.scss */
 .container-body {
   padding: 10px 30px 40px; }
 
 @media all and (min-width: 770px) {
-  /* line 123, ../sass/styleguide.scss */
+  /* line 120, ../sass/styleguide.scss */
   .example-navigation {
     max-width: 270px; } }
-/* line 128, ../sass/styleguide.scss */
+/* line 125, ../sass/styleguide.scss */
 .example-navigation li ul {
   display: none; }
 
-/* line 132, ../sass/styleguide.scss */
+/* line 129, ../sass/styleguide.scss */
 .example-navigation li.HighLighted ul {
   display: block; }
 
 @media all and (min-width: 770px) {
-  /* line 137, ../sass/styleguide.scss */
+  /* line 134, ../sass/styleguide.scss */
   #menuElem.sticky {
     width: 220px; } }
 @media all and (max-width: 769px) {
-  /* line 143, ../sass/styleguide.scss */
+  /* line 140, ../sass/styleguide.scss */
   #menuElem {
     position: relative !important; } }
-/* line 148, ../sass/styleguide.scss */
+/* line 145, ../sass/styleguide.scss */
 .example-section {
   margin-bottom: 30px; }
 
-/* line 160, ../sass/styleguide.scss */
+/* line 149, ../sass/styleguide.scss */
 .example {
   position: relative;
   margin: 15px 0 0;
@@ -143,15 +134,15 @@ pre[class*="language-"] {
   border: 1px solid #ddd;
   overflow: hidden; }
 
-/* line 170, ../sass/styleguide.scss */
+/* line 159, ../sass/styleguide.scss */
 .example-alt {
   background-color: #0088B2; }
 
-/* line 174, ../sass/styleguide.scss */
+/* line 163, ../sass/styleguide.scss */
 .example-scroll {
   overflow-x: scroll; }
 
-/* line 178, ../sass/styleguide.scss */
+/* line 167, ../sass/styleguide.scss */
 .example:after {
   content: "Example";
   position: absolute;
@@ -164,34 +155,31 @@ pre[class*="language-"] {
   border: 1px solid #ddd;
   color: #9da0a4; }
 
-/* line 191, ../sass/styleguide.scss */
+/* line 180, ../sass/styleguide.scss */
 .style-guide .carousel {
   min-height: 100px; }
 
-/* ===================================================
-	Colour Page Sections 
-===================================================	*/
-/* line 199, ../sass/styleguide.scss */
+/* line 188, ../sass/styleguide.scss */
 .colour-section-primary {
   background: #0088b2;
   color: white; }
 
-/* line 204, ../sass/styleguide.scss */
+/* line 193, ../sass/styleguide.scss */
 .colour-section-text {
   background: #333333;
   color: white; }
 
-/* line 209, ../sass/styleguide.scss */
+/* line 198, ../sass/styleguide.scss */
 .colour-section-link {
   background: #0088cc;
   color: white; }
 
-/* line 214, ../sass/styleguide.scss */
+/* line 203, ../sass/styleguide.scss */
 .colour-section-linkhover {
   background: #155375;
   color: white; }
 
-/* line 219, ../sass/styleguide.scss */
+/* line 208, ../sass/styleguide.scss */
 .colour-section-primarynav {
   background: -moz-linear-gradient(top, #00bce9 0%, #0088b2 100%);
   /* FF3.6+ */
@@ -209,77 +197,65 @@ pre[class*="language-"] {
   /* IE6-8 */
   color: white; }
 
-/* line 230, ../sass/styleguide.scss */
+/* line 219, ../sass/styleguide.scss */
 .colour-section-list {
   background: #005E9F;
   color: white; }
 
-/* line 235, ../sass/styleguide.scss */
+/* line 224, ../sass/styleguide.scss */
 .colour-section-body {
   background: #ffffff; }
 
-/* line 239, ../sass/styleguide.scss */
+/* line 228, ../sass/styleguide.scss */
 .colour-section-site {
   background: #B7D8EB; }
 
-/* ===================================================
-	Logos Page
-===================================================	*/
-/* line 247, ../sass/styleguide.scss */
+/* line 236, ../sass/styleguide.scss */
 .table-logos td {
   border-top: 0;
   text-align: center;
   padding: 10px 60px 30px 0;
   vertical-align: middle; }
 
-/* line 254, ../sass/styleguide.scss */
+/* line 243, ../sass/styleguide.scss */
 .table-logos p, .table-logos h4 {
   text-align: left; }
 
-/* ===================================================
-	Email Page
-===================================================	*/
-/* line 262, ../sass/styleguide.scss */
+/* line 251, ../sass/styleguide.scss */
 .table-newsletters td {
   border-top: 0;
   text-align: center; }
 
-/* ===================================================
-	Responsive Utilities Table
-===================================================	*/
-/* line 271, ../sass/styleguide.scss */
+/* line 260, ../sass/styleguide.scss */
 .responsive-utilities th small {
   display: block;
   font-weight: normal;
   color: #999; }
 
-/* line 276, ../sass/styleguide.scss */
+/* line 265, ../sass/styleguide.scss */
 .responsive-utilities tbody th {
   font-weight: normal; }
 
-/* line 279, ../sass/styleguide.scss */
+/* line 268, ../sass/styleguide.scss */
 .responsive-utilities td {
   text-align: center; }
 
-/* line 282, ../sass/styleguide.scss */
+/* line 271, ../sass/styleguide.scss */
 .responsive-utilities td.is-visible {
   color: #468847;
   background-color: #dff0d8 !important; }
 
-/* line 286, ../sass/styleguide.scss */
+/* line 275, ../sass/styleguide.scss */
 .responsive-utilities td.is-hidden {
   color: #ccc;
   background-color: #f9f9f9 !important; }
 
-/* ===================================================
-Style Guide layout: 
-===================================================	*/
-/* line 296, ../sass/styleguide.scss */
+/* line 284, ../sass/styleguide.scss */
 .adc-logo {
   width: 200px; }
 
-/* line 300, ../sass/styleguide.scss */
-.left-column {
+/* line 288, ../sass/styleguide.scss */
+.sidebar {
   background: #0088CC;
   position: absolute;
   z-index: 100;
@@ -288,11 +264,11 @@ Style Guide layout:
   width: 250px;
   height: 100%;
   padding: 20px; }
-  /* line 310, ../sass/styleguide.scss */
-  .left-column li a {
+  /* line 298, ../sass/styleguide.scss */
+  .sidebar li a {
     color: white; }
 
-/* line 315, ../sass/styleguide.scss */
+/* line 303, ../sass/styleguide.scss */
 .content-wrapper {
   right: 0;
   top: 0;
@@ -302,7 +278,7 @@ Style Guide layout:
   position: absolute;
   left: 300px; }
 
-/* line 325, ../sass/styleguide.scss */
+/* line 313, ../sass/styleguide.scss */
 .content {
   max-width: 1000px;
   min-width: 500px; }

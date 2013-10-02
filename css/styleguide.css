@@ -255,7 +255,7 @@ pre[class*="language-"] {
   width: 200px; }
 
 /* line 288, ../sass/styleguide.scss */
-.left-column {
+.sidebar {
   background: #0088CC;
   position: absolute;
   z-index: 100;
@@ -265,7 +265,7 @@ pre[class*="language-"] {
   height: 100%;
   padding: 20px; }
   /* line 298, ../sass/styleguide.scss */
-  .left-column li a {
+  .sidebar li a {
     color: white; }
 
 /* line 303, ../sass/styleguide.scss */
