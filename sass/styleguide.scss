@@ -281,8 +281,17 @@ pre[class*="language-"] {
 //	Style Guide Layout
 // ===================================================
 
-.adc-logo {
-	width: 200px;
+.logo {
+	padding: 20px;
+	background: white;
+
+	img {
+		width: 180px;
+	}
+}
+
+.sidebar nav {
+	padding: 20px;
 }
 
 .sidebar {
@@ -293,7 +302,6 @@ pre[class*="language-"] {
 	left: 0;
 	width: 250px;
 	height: 100%;
-	padding:20px;
 
 	li a {
 		color: white;
