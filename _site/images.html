@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Your New Jekyll Site</title>
     <meta name="description" content=ADC Style Guide with Jekyll>
     <meta name="viewport" content="width=device-width">
+=======
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Images</title>
+        <meta name="description" content=ADC Style Guide with Jekyll>
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width">
+>>>>>>> origin/sass
 
     <!-- Style Guide CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
@@ -19,6 +29,7 @@
 <body>
 	<div class="container">
 	
+<<<<<<< HEAD
 		<aside class="sidebar"> 
 			<header class="logo">
 				<img src="img/ADC.png" alt="ADC Logo">
@@ -42,17 +53,57 @@
 
 			<article class="content">  
 				<h1>Images</h1>
+=======
+		<aside class="left-column"> 
+			<img style="width:200px" src="img/ADC.png" alt="ADC Logo">
+			<hr>
+			<ul class="nav nav-pills nav-stacked">
+				<li><a style="color:white" href="colours.html">Colours</a></li>
+				<li><a style="color:white" href="typography.html">Typography</a></li>
+				<li><a style="color:white" href="buttons.html">Buttons</a></li>
+				<li><a style="color:white" href="images.html">Images</a></li>
+                <li><a style="color:white" href="logos.html">Logos</a></li>
+				<li><a style="color:white" href="email.html">Emails</a></li>
+				<li><a style="color:white" href="other.html">Other Elements</a></li>
+				<hr>
+				<li><a style="color:white" href="proof.html">Proof Reading</a></li>
+				<hr>
+
+				<li><a style="color:white" href="/">About</a></li>
+			</ul>
+			</aside><!-- .left-column -->
+
+			<div class="content-wrapper"> 
+				<div class="content">  
+				<br>
+<div class="alert alert-warning alert-dismissable">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<strong>Warning!</strong> This page is work-in-progress.
+</div>
+
+
+<h1>Images</h1>
+>>>>>>> origin/sass
 
 <!--
 	Image Usage
 -->
 
-<h3 class="example-section-heading" id="imageusage">Image Usage Guidelines</h3>
-<ul>
-	<li>Images should be no more than 72ppi in resolution</li>
-	<li>Images should be pre-cropped for the space they will be inserted into (as indicated below)</li>
-	<li>Wrap images within articles in the appropriate HTML code as indicated in the <a href="#imageleft">floated sections</a>.
-</ul>
+<div class="panel panel-warning">
+	<div class="panel-heading">
+        <h3 class="panel-title">Image Usage Guidelines</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul>
+			<li>Images should be no more than 72ppi in resolution</li>
+			<li>Images should be pre-cropped for the space they will be inserted into (as indicated below)</li>
+			<li>Wrap images within articles in the appropriate HTML code as indicated in the <a href="#imageleft">floated sections</a>.</li>
+		</ul>
+    </div>
+</div>
+
+
 <h3>Image Sizes</h3>
 <p>The below table indicates the required images sizes throghout the website</p>
 <table class="table table-bordered table-striped">
@@ -97,19 +148,32 @@
 	</tbody>
 </table>
 
+<<<<<<< HEAD
+=======
+<hr>
+>>>>>>> origin/sass
 <!--
-	Polaroid
+	Image Borders
 -->
 
 <article class="example-section" id="polaroid">
-	<h3 class="example-section-heading">Polariod Image</h3>
-	<p class="example-intro">The polaroid image is used exclusively in recipes.</p>
+	<h3 class="example-section-heading">Image Borders</h3>
+	<p class="example-intro">There are 3 styling that can be applied to any image.</p>
 	<div class="example">
-		<img class="img-polaroid" width="380" src="img/recipe.jpg">
+		<img class=" "  alt="default" width="200" src="img/recipe.jpg">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-rounded"  alt="rounded" width="200" src="img/recipe.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-circle"  alt="circle" width="200" src="img/recipe.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="img-thumbnail" alt="thumbnail" width="200" src="img/recipe.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
-	<pre><code class="language-markup">&lt;img class=&quot;img-polaroid&quot; src=&quot;&quot;&gt;</code></pre>
+	<pre><code class="language-markup">&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot; &quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-thumbnail&quot;&gt;	</code></pre>
 </article>
 
+
+<hr>
 <!--
 	Floated Left
 -->
@@ -118,7 +182,7 @@
 	<h3 class="example-section-heading">Image Floated Left</h3>
 	<p class="example-intro">To float an image to the left, enclose the image within a <code>&lt;figure&gt;</code> element with a class of <code>&lt;pull-left&gt;</code>.</p>
 	<div class="example">
-		<figure class="pull-left"><img src="img/image-page-example.jpg" width="120"></figure><p class="normaltext">This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
+		<figure class="pull-left"><img src="img/image-page-example.jpg" width="200"></figure><p class="normaltext">This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
 	</div>
 	<pre><code class="language-markup">&lt;figure class=&quot;pull-left&quot;&gt;
 	&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
@@ -128,6 +192,7 @@
 &lt;/p&gt;</code></pre>
 </article>
 
+<hr>
 <!--
 	Floated Right
 -->
@@ -136,7 +201,7 @@
 	<h3 class="example-section-heading">Image Floated Right</h3>
 	<p class="example-intro">To float an image to the right, enclose the image within a <code>&lt;figure&gt;</code> element with a class of <code>&lt;pull-right&gt;</code>.</p>
 	<div class="example">
-		<figure class="pull-right"><img src="img/image-page-example.jpg" width="120"></figure><p>This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
+		<figure class="pull-right"><img src="img/image-page-example.jpg" width="200"></figure><p>This is some text which is floated around a left aligned image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero massa, ullamcorper id semper in, interdum ac leo. Nunc a velit purus, quis volutpat nibh. Nam porta metus vitae sapien semper dapibus.</p>
 	</div>
 	<pre><code class="language-markup">&lt;figure class=&quot;pull-right&quot;&gt;
 	&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
@@ -147,6 +212,10 @@
 </code></pre>
 </article>
 
+<<<<<<< HEAD
+=======
+<hr>
+>>>>>>> origin/sass
 <!--
 	Image With Caption
 -->
@@ -166,6 +235,7 @@
 &lt;/p&gt;
 </code></pre>
 </article>
+<<<<<<< HEAD
 
 <!--
 	Homepage News Icon
@@ -179,6 +249,8 @@
 	</div>
 	<pre><code class="language-markup">&lt;img class=&quot;newsthumbnail&quot; src=&quot;&quot;&gt;</code></pre>
 </article>
+=======
+>>>>>>> origin/sass
 
 			</article>
 

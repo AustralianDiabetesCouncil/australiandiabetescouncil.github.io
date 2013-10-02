@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Your New Jekyll Site</title>
     <meta name="description" content=ADC Style Guide with Jekyll>
     <meta name="viewport" content="width=device-width">
+=======
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Buttons</title>
+        <meta name="description" content=ADC Style Guide with Jekyll>
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width">
+>>>>>>> origin/sass
 
     <!-- Style Guide CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
@@ -19,6 +29,7 @@
 <body>
 	<div class="container">
 	
+<<<<<<< HEAD
 		<aside class="sidebar"> 
 			<header class="logo">
 				<img src="img/ADC.png" alt="ADC Logo">
@@ -52,18 +63,37 @@
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn-success">Success</button>
+=======
+		<aside class="left-column"> 
+			<img style="width:200px" src="img/ADC.png" alt="ADC Logo">
+			<hr>
+			<ul class="nav nav-pills nav-stacked">
+				<li><a style="color:white" href="colours.html">Colours</a></li>
+				<li><a style="color:white" href="typography.html">Typography</a></li>
+				<li><a style="color:white" href="buttons.html">Buttons</a></li>
+				<li><a style="color:white" href="images.html">Images</a></li>
+                <li><a style="color:white" href="logos.html">Logos</a></li>
+				<li><a style="color:white" href="email.html">Emails</a></li>
+				<li><a style="color:white" href="other.html">Other Elements</a></li>
+				<hr>
+				<li><a style="color:white" href="proof.html">Proof Reading</a></li>
+				<hr>
 
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info">Info</button>
+				<li><a style="color:white" href="/">About</a></li>
+			</ul>
+			</aside><!-- .left-column -->
 
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning">Warning</button>
+			<div class="content-wrapper"> 
+				<div class="content">  
+				<br>
+<div class="alert alert-warning alert-dismissable">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<strong>Warning!</strong> This page is work-in-progress.
+</div>
+>>>>>>> origin/sass
 
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn-danger">Danger</button>
 
-<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn btn-link">Link</button>
+<h1>Buttons</h1>
 
 <!--
 	Standard Button
@@ -72,6 +102,7 @@
 <article class="example-section" id="standard">
 	<h3  id="standard" class="example-section-heading">Standard Buttons</h3>
 	<p class="example-intro">The most common buttons used throughout the website.</p>
+<<<<<<< HEAD
 	<table class="table table-bordered table-striped">
 		<thead>
 			<tr>
@@ -108,12 +139,41 @@
 			</tr>
 		</tbody>
 	</table>
+=======
+
+	<div class="example">
+		<!-- Standard gray button with gradient -->
+		<button type="button" class="btn btn-default">Default</button>
+<br><br>
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button type="button" class="btn btn-primary">Primary Action</button>	<button type="button" class="btn btn-primary">Confirm</button>
+		<button type="button" class="btn btn-primary">Learn More</button>
+		<button type="button" class="btn btn-primary">Signup</button>
+		<button type="button" class="btn btn-primary">Register</button>
+
+<br><br>
+		<!-- Indicates a successful or positive action -->
+		<button type="button" class="btn btn-success">Download</button>
+		<button type="button" class="btn btn-success">Add to Cart</button>
+<br><br>
+		<!-- Contextual button for informational alert messages -->
+		<button type="button" class="btn btn-info">Donate</button>
+<br><br>
+		<button type="button" class="btn btn-danger">Delete</button>
+		<button type="button" class="btn btn-danger">Terminate</button>
+		<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<br><br>
+		<button type="button" class="btn btn-link">Cancel</button>
+	</div>
+
+>>>>>>> origin/sass
 	<pre><code class="language-markup">&lt;a href=&quot;&quot; class=&quot;btn btn-default&quot;&gt;Standard button&lt;/a&gt;
 &lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;Donate button&lt;/a&gt;
 &lt;a href=&quot;&quot; class=&quot;btn btn-success&quot;&gt;Download button&lt;/a&gt;
 &lt;a href=&quot;&quot;&gt;Read More &raquo;&lt;/a&gt;</code></pre>
 </article>
 
+<<<<<<< HEAD
 <!--
 	Dropdown Button
 -->
@@ -159,6 +219,9 @@
 	</div>
 	<pre><code class="language-markup">&lt;a class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Full Width Button&lt;/a&gt;</code></pre>
 </article>
+=======
+
+>>>>>>> origin/sass
 
 <!--
 	Sized Button
@@ -168,6 +231,7 @@
 	<h3 class="example-section-heading">Sized Buttons</h3>
 	<p class="example-intro">Buttons can easily be sized to command a greater visual importance. Use the class of <code>.btn-small</code>, <code>.btn-medium</code> or <code>.btn-large</code> to specify the botton size. The default size is medium.</p>
 	<div class="example">
+<<<<<<< HEAD
 		<a class="btn btn-primary btn-lg">Large Button</a><br><br>
 		<a class="btn btn-primary">Default Button</a><br><br>
 		<a class="btn btn-primary btn-sm">Small Button</a><br><br>
@@ -177,6 +241,29 @@
 &lt;a class=&quot;btn btn-primary&quot;&gt;Default Button&lt;/a&gt;<br>
 &lt;a class=&quot;btn btn-primary btn-sm&quot;&gt;Small Button&lt;/a&gt;<br>
 &lt;a class=&quot;btn btn-primary btn-xs&quot;&gt;Extra Small Button&lt;/a&gt;</code></pre>
+=======
+		<a class="btn btn-primary btn-lg">Large Primary Button</a><br><br>
+		<a class="btn btn-primary ">Primary Button</a><br><br>
+	</div>
+	<pre><code class="language-markup">&lt;a class=&quot;btn btn-lg&quot;&gt;Large Button&lt;/a&gt;<br>
+&lt;a class=&quot;btn&quot;&gt;Button&lt;/a&gt;</code></pre>
+>>>>>>> origin/sass
+</article>
+
+<!--
+	Full Width Button
+-->
+
+<article class="example-section" id="fullwidth">
+	<h3  id="standard" class="example-section-heading">Full Width Button</h3>
+	<p class="example-intro">Add a class of <code>.btn-block</code> to any button to make the button full width.</p>
+	<div class="example">
+		<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+      </div>
+	</div>
+	<pre><code class="language-markup">&lt;a class=&quot;btn btn-block btn-large&quot;&gt;Full Width Button&lt;/a&gt;</code></pre>
 </article>
 
 <!--
@@ -187,7 +274,7 @@
 	<h3 class="example-section-heading">Button with Tooltip</h3>
 	<p class="example-intro">A tooltip can be added to a donate button to provide the visitor with additional information about the buttons action. Based on the buttons position, the <code>dada-placement</code> value can be changed to top, left, right or bottom. Bottom should be used where possible.</p>
 	<div class="example">
-		<a class="btn btn-danger" data-original-title="Did you know donations are tax deductible?" data-placement="right" data-toggle="modal" href="" id="btndonate" rel="tooltip" role="button">Hover to See Tooltip</a>
+		<a class="btn btn-info" data-original-title="Did you know donations are tax deductible?" data-placement="right" data-toggle="modal" href="" id="btndonate" rel="tooltip" role="button">Hover to See Tooltip</a>
 	</div>
 	<pre><code class="language-markup">&lt;a class=&quot;btn btn-danger&quot; data-original-title=&quot;Tooltip Text&quot; data-placement=&quot;right&quot; data-toggle=&quot;modal&quot; href=&quot;#&quot; id=&quot;btndonate&quot; rel=&quot;tooltip&quot; role=&quot;button&quot;&gt;Donate Online Now&lt;/a&gt;</code></pre>
 </article>
