@@ -251,18 +251,6 @@ pre[class*="language-"] {
   background-color: #f9f9f9 !important; }
 
 /* line 284, ../sass/styleguide.scss */
-.logo {
-  padding: 20px;
-  background: white; }
-  /* line 288, ../sass/styleguide.scss */
-  .logo img {
-    width: 180px; }
-
-/* line 293, ../sass/styleguide.scss */
-.sidebar nav {
-  padding: 20px; }
-
-/* line 297, ../sass/styleguide.scss */
 .sidebar {
   background: #0088CC;
   position: absolute;
@@ -270,22 +258,36 @@ pre[class*="language-"] {
   top: 0;
   left: 0;
   width: 250px;
-  height: 100%; }
-  /* line 306, ../sass/styleguide.scss */
+  height: 100%;
+  border-right: 2px solid #f1f1f1; }
+  /* line 294, ../sass/styleguide.scss */
   .sidebar li a {
     color: white; }
 
-/* line 311, ../sass/styleguide.scss */
+/* line 299, ../sass/styleguide.scss */
+.logo {
+  padding: 20px;
+  background: white;
+  text-align: center; }
+  /* line 304, ../sass/styleguide.scss */
+  .logo img {
+    width: 180px; }
+
+/* line 309, ../sass/styleguide.scss */
+.sidebar nav {
+  padding: 20px; }
+
+/* line 313, ../sass/styleguide.scss */
 .content-wrapper {
-  right: 0;
+  right: 30px;
   top: 0;
   bottom: 0;
+  left: 280px;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
-  position: absolute;
-  left: 300px; }
+  position: absolute; }
 
-/* line 321, ../sass/styleguide.scss */
+/* line 323, ../sass/styleguide.scss */
 .content {
   max-width: 1000px;
   min-width: 500px; }
