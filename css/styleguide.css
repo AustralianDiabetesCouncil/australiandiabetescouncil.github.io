@@ -1,325 +1,305 @@
 /* Style Guide Website Specific Styles */
-
 /* ===================================================
 	Code hghlighting 
 ===================================================	*/
-
+/* line 8, ../sass/styleguide.scss */
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-	
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	
-	border: border: 1px solid #e1e1e8;
-	-webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  border: 1px solid #e1e1e8;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
 
 @media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
+  /* line 34, ../sass/styleguide.scss */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none; } }
 /* Code blocks */
+/* line 40, ../sass/styleguide.scss */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: -1px 0 0;
-	overflow: auto;	
-}
+  padding: 1em;
+  margin: -1px 0 0;
+  overflow: auto; }
 
+/* line 47, ../sass/styleguide.scss */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background-color: #f7f7f9;
-}
+  background-color: #f7f7f9; }
 
 /* Inline code */
+/* line 52, ../sass/styleguide.scss */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-}
+  padding: .1em; }
 
+/* line 59, ../sass/styleguide.scss */
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
-}
+  color: slategray; }
 
+/* line 63, ../sass/styleguide.scss */
 .token.punctuation {
-	color: #999;
-}
+  color: #999; }
 
+/* line 67, ../sass/styleguide.scss */
 .namespace {
-	opacity: .7;
-}
+  opacity: .7; }
 
+/* line 74, ../sass/styleguide.scss */
 .token.property,
 .token.tag,
 .token.boolean,
 .token.number {
-	color: #905;
-}
+  color: #905; }
 
+/* line 80, ../sass/styleguide.scss */
 .token.selector,
 .token.attr-name,
 .token.string {
-	color: #690;
-}
+  color: #690; }
 
+/* line 88, ../sass/styleguide.scss */
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #a67f59;
-	background-color: #f7f7f9;
-}
+  color: #a67f59;
+  background-color: #f7f7f9; }
 
+/* line 95, ../sass/styleguide.scss */
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
-}
+  color: #07a; }
 
-
+/* line 101, ../sass/styleguide.scss */
 .token.regex,
 .token.important {
-	color: #e90;
-}
+  color: #e90; }
 
+/* line 105, ../sass/styleguide.scss */
 .token.important {
-	font-weight: bold;
-}
+  font-weight: bold; }
 
+/* line 109, ../sass/styleguide.scss */
 .token.entity {
-	cursor: help;
-}
-
+  cursor: help; }
 
 /* ===================================================
 	Layout 
 ===================================================	*/
-
+/* line 118, ../sass/styleguide.scss */
 .container-body {
-	padding: 10px 30px 40px;
-}
+  padding: 10px 30px 40px; }
 
 @media all and (min-width: 770px) {
-	.example-navigation {
-		max-width: 270px;
-	}
-}
-
+  /* line 123, ../sass/styleguide.scss */
+  .example-navigation {
+    max-width: 270px; } }
+/* line 128, ../sass/styleguide.scss */
 .example-navigation li ul {
-	display: none;
-}
+  display: none; }
 
+/* line 132, ../sass/styleguide.scss */
 .example-navigation li.HighLighted ul {
-	display: block;
-}
+  display: block; }
 
 @media all and (min-width: 770px) {
-	#menuElem.sticky {
-		width: 220px;
-	}
-}
-
+  /* line 137, ../sass/styleguide.scss */
+  #menuElem.sticky {
+    width: 220px; } }
 @media all and (max-width: 769px) {
-	#menuElem {
-		position: relative!important;
-	}
-}
-
+  /* line 143, ../sass/styleguide.scss */
+  #menuElem {
+    position: relative !important; } }
+/* line 148, ../sass/styleguide.scss */
 .example-section {
-	margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
-.example-section-heading {
-
-}
-
-.example-intro {
-
-}
-
+/* line 160, ../sass/styleguide.scss */
 .example {
-	position: relative;
-	margin: 15px 0 0;
-	padding: 47px 19px 19px;
-	*padding-top: 19px;
-	background-color: #fff;
-	border: 1px solid #ddd;
-	overflow: hidden;
-}
+  position: relative;
+  margin: 15px 0 0;
+  padding: 47px 19px 19px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  overflow: hidden; }
 
+/* line 170, ../sass/styleguide.scss */
 .example-alt {
-	background-color: #0088B2;
-}
+  background-color: #0088B2; }
 
+/* line 174, ../sass/styleguide.scss */
 .example-scroll {
-	overflow-x: scroll;
-}
+  overflow-x: scroll; }
 
+/* line 178, ../sass/styleguide.scss */
 .example:after {
-	content: "Example";
-	position: absolute;
-	top: -1px;
-	left: -1px;
-	padding: 3px 7px;
-	font-size: 12px;
-	font-weight: bold;
-	background-color: #f5f5f5;
-	border: 1px solid #ddd;
-	color: #9da0a4;
-}
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4; }
 
+/* line 191, ../sass/styleguide.scss */
 .style-guide .carousel {
-	min-height: 100px;
-}
+  min-height: 100px; }
 
 /* ===================================================
 	Colour Page Sections 
 ===================================================	*/
-
+/* line 199, ../sass/styleguide.scss */
 .colour-section-primary {
-	background: #0088b2;
-	color: white;
-}
+  background: #0088b2;
+  color: white; }
 
+/* line 204, ../sass/styleguide.scss */
 .colour-section-text {
-	background: #333333;
-	color: white;
-}
+  background: #333333;
+  color: white; }
 
+/* line 209, ../sass/styleguide.scss */
 .colour-section-link {
-	background: #0088cc;
-	color: white;
-}
+  background: #0088cc;
+  color: white; }
 
+/* line 214, ../sass/styleguide.scss */
 .colour-section-linkhover {
-	background: #155375;
-	color: white;
-}
+  background: #155375;
+  color: white; }
 
+/* line 219, ../sass/styleguide.scss */
 .colour-section-primarynav {
-	background: -moz-linear-gradient(top, rgba(0,188,233,1) 0%, rgba(0,136,178,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,188,233,1)), color-stop(100%,rgba(0,136,178,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(0,188,233,1) 0%,rgba(0,136,178,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bce9', endColorstr='#0088b2',GradientType=0 ); /* IE6-8 */
-	color: white;
-}
+  background: -moz-linear-gradient(top, #00bce9 0%, #0088b2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00bce9), color-stop(100%, #0088b2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00bce9 0%, #0088b2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00bce9 0%, #0088b2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00bce9 0%, #0088b2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #00bce9 0%, #0088b2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00bce9', endColorstr='#0088b2',GradientType=0 );
+  /* IE6-8 */
+  color: white; }
 
+/* line 230, ../sass/styleguide.scss */
 .colour-section-list {
-	background: #005E9F;
-	color: white;
-}
+  background: #005E9F;
+  color: white; }
 
+/* line 235, ../sass/styleguide.scss */
 .colour-section-body {
-	background: #ffffff;
-}
+  background: #ffffff; }
 
+/* line 239, ../sass/styleguide.scss */
 .colour-section-site {
-	background: #B7D8EB;
-}
+  background: #B7D8EB; }
 
 /* ===================================================
 	Logos Page
 ===================================================	*/
-
+/* line 247, ../sass/styleguide.scss */
 .table-logos td {
-	border-top: 0;
-	text-align: center;
-	padding: 10px 60px 30px 0;
-	vertical-align: middle;
-}
+  border-top: 0;
+  text-align: center;
+  padding: 10px 60px 30px 0;
+  vertical-align: middle; }
 
+/* line 254, ../sass/styleguide.scss */
 .table-logos p, .table-logos h4 {
-	text-align: left;
-}
+  text-align: left; }
 
 /* ===================================================
 	Email Page
 ===================================================	*/
-
+/* line 262, ../sass/styleguide.scss */
 .table-newsletters td {
-	border-top: 0;
-	text-align: center;
-}
+  border-top: 0;
+  text-align: center; }
 
 /* ===================================================
 	Responsive Utilities Table
 ===================================================	*/
-
+/* line 271, ../sass/styleguide.scss */
 .responsive-utilities th small {
   display: block;
   font-weight: normal;
-  color: #999;
-}
+  color: #999; }
+
+/* line 276, ../sass/styleguide.scss */
 .responsive-utilities tbody th {
-  font-weight: normal;
-}
+  font-weight: normal; }
+
+/* line 279, ../sass/styleguide.scss */
 .responsive-utilities td {
-  text-align: center;
-}
+  text-align: center; }
+
+/* line 282, ../sass/styleguide.scss */
 .responsive-utilities td.is-visible {
   color: #468847;
-  background-color: #dff0d8 !important;
-}
+  background-color: #dff0d8 !important; }
+
+/* line 286, ../sass/styleguide.scss */
 .responsive-utilities td.is-hidden {
   color: #ccc;
-  background-color: #f9f9f9 !important;
-}
-
+  background-color: #f9f9f9 !important; }
 
 /* ===================================================
 Style Guide layout: 
 ===================================================	*/
+/* line 296, ../sass/styleguide.scss */
+.adc-logo {
+  width: 200px; }
 
-.left-column{
-	background: #0088CC;
-	/*background-image: linear-gradient(top, white 0px, white 270px, #0088CC 270px, #0088CC 100%);
-	background-image: -o-linear-gradient(top, white 0px, white 270px, #0088CC 270px, #0088CC 100%);
-	background-image: -moz-linear-gradient(top, white 0px, white 270px, #0088CC 270px, #0088CC 100%);
-	background-image: -webkit-linear-gradient(top, white 0px, white 270px, #0088CC 270px, #0088CC 100%);
-	background-image: -ms-linear-gradient(top, white 0px, white 270px, #0088CC 270px, #0088CC 100%);*/
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	width: 250px;
-	height: 100%;
-	padding:20px;
-}
+/* line 300, ../sass/styleguide.scss */
+.left-column {
+  background: #0088CC;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px; }
 
-.content-wrapper{
-	right: 0;
-	top: 0;
-	bottom: 0;
-	-webkit-overflow-scrolling: touch;
-	overflow: auto;
-	position: absolute;
-	left: 300px;
-}
+/* line 311, ../sass/styleguide.scss */
+.content-wrapper {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  position: absolute;
+  left: 300px; }
 
-.content{
-	max-width: 1000px;
-	min-width: 500px;
-}
+/* line 321, ../sass/styleguide.scss */
+.content {
+  max-width: 1000px;
+  min-width: 500px; }
