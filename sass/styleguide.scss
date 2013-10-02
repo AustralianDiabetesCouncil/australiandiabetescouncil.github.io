@@ -293,6 +293,10 @@ pre[class*="language-"] {
 
 	li a {
 		color: white;
+
+		&:hover {
+			color: #2a6496;
+		}
 	}
 }
 
