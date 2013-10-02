@@ -1,8 +1,8 @@
-/* Style Guide Website Specific Styles */
+@import "compass";
 
-/* ===================================================
-	Code hghlighting 
-===================================================	*/
+// ===================================================
+//	Code hghlighting 
+// ===================================================
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -13,20 +13,11 @@ pre[class*="language-"] {
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
-	
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-	
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	
-	border: 1px solid #e1e1e8;
-	-webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+	@include hyphens(none);
+    @include border-radius(0px);
 }
 
 @media print {
@@ -36,7 +27,10 @@ pre[class*="language-"] {
 	}
 }
 
-/* Code blocks */
+// ===================================================
+//	Code Blocks
+// ===================================================
+
 pre[class*="language-"] {
 	padding: 1em;
 	margin: -1px 0 0;
@@ -48,7 +42,10 @@ pre[class*="language-"] {
 	background-color: #f7f7f9;
 }
 
-/* Inline code */
+// ===================================================
+//	Inline Code
+// ===================================================
+
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
 }
@@ -111,9 +108,9 @@ pre[class*="language-"] {
 }
 
 
-/* ===================================================
-	Layout 
-===================================================	*/
+// ===================================================
+//	Layout
+// ===================================================
 
 .container-body {
 	padding: 10px 30px 40px;
@@ -147,14 +144,6 @@ pre[class*="language-"] {
 
 .example-section {
 	margin-bottom: 30px;
-}
-
-.example-section-heading {
-
-}
-
-.example-intro {
-
 }
 
 .example {
@@ -192,9 +181,9 @@ pre[class*="language-"] {
 	min-height: 100px;
 }
 
-/* ===================================================
-	Colour Page Sections 
-===================================================	*/
+// ===================================================
+//	Colour Page Sections
+// ===================================================
 
 .colour-section-primary {
 	background: #0088b2;
@@ -240,9 +229,9 @@ pre[class*="language-"] {
 	background: #B7D8EB;
 }
 
-/* ===================================================
-	Logos Page
-===================================================	*/
+// ===================================================
+//	Logos Page
+// ===================================================
 
 .table-logos td {
 	border-top: 0;
@@ -255,18 +244,18 @@ pre[class*="language-"] {
 	text-align: left;
 }
 
-/* ===================================================
-	Email Page
-===================================================	*/
+// ===================================================
+//	Email Page
+// ===================================================
 
 .table-newsletters td {
 	border-top: 0;
 	text-align: center;
 }
 
-/* ===================================================
-	Responsive Utilities Table
-===================================================	*/
+// ===================================================
+//	Responsive Utilities Table
+// ===================================================
 
 .responsive-utilities th small {
   display: block;
@@ -288,16 +277,15 @@ pre[class*="language-"] {
   background-color: #f9f9f9 !important;
 }
 
-
-/* ===================================================
-Style Guide layout: 
-===================================================	*/
+// ===================================================
+//	Style Guide Layout
+// ===================================================
 
 .adc-logo {
 	width: 200px;
 }
 
-.left-column{
+.left-column {
 	background: #0088CC;
 	position: absolute;
 	z-index: 100;
@@ -312,7 +300,7 @@ Style Guide layout:
 	}
 }
 
-.content-wrapper{
+.content-wrapper {
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -322,7 +310,7 @@ Style Guide layout:
 	left: 300px;
 }
 
-.content{
+.content {
 	max-width: 1000px;
 	min-width: 500px;
 }
