@@ -317,6 +317,7 @@ Style Guide layout:
 	overflow: auto;
 	position: absolute;
 	left: 300px;
+	padding-right: 40px;
 }
 
 .content{
