@@ -288,8 +288,11 @@ Style Guide layout:
   width: 250px;
   height: 100%;
   padding: 20px; }
+  /* line 310, ../sass/styleguide.scss */
+  .left-column li a {
+    color: white; }
 
-/* line 311, ../sass/styleguide.scss */
+/* line 315, ../sass/styleguide.scss */
 .content-wrapper {
   right: 0;
   top: 0;
@@ -299,7 +302,7 @@ Style Guide layout:
   position: absolute;
   left: 300px; }
 
-/* line 321, ../sass/styleguide.scss */
+/* line 325, ../sass/styleguide.scss */
 .content {
   max-width: 1000px;
   min-width: 500px; }
