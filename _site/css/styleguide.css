@@ -132,6 +132,9 @@ pre[class*="language-"] {
 .style-guide .carousel {
   min-height: 100px; }
 
+#dropdown .example {
+  padding-bottom: 150px; }
+
 .colour-section-primary {
   background: #0088b2;
   color: white; }
