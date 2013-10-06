@@ -76,8 +76,21 @@ module.exports = function(grunt) {
 				cmd: 'jekyll build'
 			},
 			serve: {
-				cmd: 'jekyll serve --watch'
+				cmd: 'jekyll serve'
 			}
+		},
+		watch: {
+			files: [
+				'sass/*.scss', 
+				'js/*.js',
+				'!js/*.min.js',  // ignore minified files
+				'!js/bootstrap.js', // ignore concat'd bootstrap
+				'!sass/style.scss', // only imports
+			],
+			tasks: ['jshint', 'concat', 'uglify', 'compass', 'exec:build'],
+			options: {
+				livereload: true,
+			},
 		}
 	});
 
@@ -87,9 +100,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-exec');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-livereload');
 
 	// Tasks
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'compass', 'exec:build']);
-	grunt.registerTask('serve', ['default', 'exec:serve']);
+	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'compass']);
+	grunt.registerTask('build', ['default', 'exec:build']);
+	grunt.registerTask('serve', ['build', 'exec:serve']);
 
 };
