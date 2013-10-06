@@ -41,9 +41,6 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			options: {
-				banner: '<%= banner %>'
-			},
 			bootstrap: {
 				files: {
 					'js/bootstrap.min.js': [ 'js/bootstrap/transition.js',
@@ -58,11 +55,18 @@ module.exports = function(grunt) {
 											 'js/bootstrap/scrollspy.js',
 											 'js/bootstrap/tab.js',
 											 'js/bootstrap/affix.js' ],
+				},
+				options: {
+					banner: '<%= banner %>'
+				},
+			},
+			scripts: {
+				files: {
 					'js/prism.min.js': ['js/prism.js'],
 					'js/styleguide.min.js': ['js/styleguide.js'],
 					'js/website.min.js': ['js/website.js']
-				}
-			}
+				},
+			},
 		},
 		compass: {
 			dist: {
@@ -76,7 +80,7 @@ module.exports = function(grunt) {
 				cmd: 'jekyll build'
 			},
 			serve: {
-				cmd: 'jekyll serve'
+				cmd: 'jekyll serve --watch'
 			}
 		},
 		watch: {
