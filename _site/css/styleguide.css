@@ -176,7 +176,7 @@ pre[class*="language-"] {
   background: #ffffff; }
 
 .colour-section-site {
-  background: #B7D8EB; }
+  background: #F7FBFD; }
 
 .table-logos td {
   border-top: 0;
@@ -235,14 +235,17 @@ pre[class*="language-"] {
   padding: 20px; }
 
 .content-wrapper {
-  right: 30px;
+  overflow: auto;
+  position: absolute;
+  padding-right: 30px;
   top: 0;
   bottom: 0;
+  right: 0;
   left: 280px;
   -webkit-overflow-scrolling: touch;
-  overflow: auto;
-  position: absolute; }
+   }
 
 .content {
   max-width: 1000px;
-  min-width: 500px; }
+  min-width: 500px; 
+}
